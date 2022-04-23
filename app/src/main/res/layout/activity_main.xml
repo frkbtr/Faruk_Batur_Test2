@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faruk Batur Test2:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the quetion?"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:hint="A option"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer1"
+        android:hint="B option"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer2"
+        android:hint="C option"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer3"
+        android:hint="D option"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btninsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer4"
+        android:layout_marginTop="10dp"
+        android:text="Add Question"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Edit Question"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btninsert"/>
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Question"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnupdate"/>
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Preview"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btndelete"/>
+
+
+</RelativeLayout>
